@@ -1,6 +1,6 @@
 # Projektarbeit
 
-Dieses Repository enthält eine gemeinsame Jupyter-Notebook-Datei (`projektarbeit.ipynb`), an der 3 Entwickler parallel arbeiten. Für eine reibungslose Zusammenarbeit gelten folgende verbindliche Regeln:
+Dieses Repository enthält eine gemeinsame Jupyter-Notebook-Datei (`projektdatei.ipynb`), an der 3 Entwickler parallel arbeiten. Für eine reibungslose Zusammenarbeit gelten folgende verbindliche Regeln:
 
 ## Arbeitsweise mit Git und GitHub
 
