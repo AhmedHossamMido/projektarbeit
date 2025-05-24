@@ -39,7 +39,7 @@ Dieses Repository enthält eine gemeinsame Jupyter-Notebook-Datei (`projektarbei
 ### 7. Regeln zum Schutz von `main`
 - Direkte Änderungen am `main`-Branch sind ausnahmslos verboten.
 - Alle Änderungen müssen per Pull Request erfolgen.
-- Jeder Pull Request, der in `main` gemerged wird, benötigt die Genehmigung von **zwei** Personen.
+- Jeder Pull Request, der in `main` gemerged wird, benötigt die Genehmigung von **drei** Personen.
 
 ---
 
