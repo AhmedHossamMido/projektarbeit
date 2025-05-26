@@ -11,8 +11,6 @@ Dieses Repository enthält eine gemeinsame Jupyter-Notebook-Datei (`projektdatei
 ### 2. Persönliche Feature-Branches
 - Jeder Entwickler arbeitet ausschließlich in seinem eigenen Branch, z. B.:  
   - `projektarbeit/AhmedHossamMido`  
-  - `projektarbeit/dpair123`  
-  - `projektarbeit/AfuLD`  
 - Änderungen werden dort vorgenommen, committet und gepusht.
 
 ### 3. Bearbeitung der Datei
