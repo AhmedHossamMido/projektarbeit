@@ -29,6 +29,9 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
   rm -rf $HOME/work
 ENV DEBUGINFOD_URLS="https://debuginfod.ubuntu.com/"
 
+# bessere Code-Darstellung
+RUN apt-get update && apt-get install -y fonts-firacode
+
 # $NB_USER is jovyan
 USER $NB_USER
 
