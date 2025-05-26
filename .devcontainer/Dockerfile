@@ -21,6 +21,7 @@ RUN rm -f /etc/apt/apt.conf.d/docker-clean; echo 'Binary::apt::APT::Keep-Downloa
 RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
   --mount=type=cache,target=/var/lib/apt,sharing=locked \
   apt-get update && apt-get install -yq --no-install-recommends \
+    git \
     # memray's native mode resolves symbols using debuginfod, https://bloomberg.github.io/memray/native_mode.html#debuginfod-integration
     debuginfod && \
     # build dependencies for scalene https://pypi.org/project/scalene/#files
