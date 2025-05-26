@@ -90,4 +90,3 @@ ENV JUPYTERHUB_SERVICE_PREFIX="/"
 #     git
 
 CMD ["jupyter", "notebook", "--NotebookApp.token=", "--NotebookApp.disable_check_xsrf=True", "--ip=0.0.0.0", "--port=8888", "--no-browser"]
-
