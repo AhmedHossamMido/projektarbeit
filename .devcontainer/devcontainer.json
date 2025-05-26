@@ -2,7 +2,5 @@
   "name": "projektarbeit",
   "build": {
     "dockerfile": "Dockerfile"
-  },
-  "forwardPorts": [8888],
-  "postCreateCommand": "echo 'Jupyter Notebook gestartet auf Port 8888'"
+  }
 }
