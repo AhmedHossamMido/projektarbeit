@@ -88,3 +88,6 @@ ENV JUPYTERHUB_SERVICE_PREFIX="/"
 #   export CONDA_PKGS_DIRS=$HOME/.conda/pkgs && \
 #   mamba install -y -c conda-forge \
 #     git
+
+CMD ["jupyter", "notebook", "--NotebookApp.token=", "--NotebookApp.disable_check_xsrf=True", "--ip=0.0.0.0", "--port=8888", "--no-browser"]
+
