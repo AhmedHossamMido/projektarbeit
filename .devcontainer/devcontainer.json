@@ -2,9 +2,5 @@
   "name": "projektarbeit",
   "build": {
     "dockerfile": "Dockerfile"
-  },
-  "settings": {},
-  "extensions": [],
-  "postCreateCommand": "",
-  "forwardPorts": [8888, 9001]
+  }
 }
