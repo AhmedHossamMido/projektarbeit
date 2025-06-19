@@ -12,5 +12,17 @@
       ]
     }
   },
-  "remoteUser": "jovyan"
+  "remoteUser": "jovyan",
+  "settings": {
+    "terminal.integrated.profiles.linux": {
+      "bash (conda base)": {
+        "path": "/bin/bash",
+        "args": [
+          "-c",
+          "conda activate base && exec bash"
+        ]
+      }
+    },
+    "terminal.integrated.defaultProfile.linux": "bash (conda base)"
+  }
 }
