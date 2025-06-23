@@ -3,7 +3,7 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "postCreateCommand": "pip install -r /workspaces/$(basename ${GITHUB_REPOSITORY})/requirements.txt && py pyflyby.install_in_ipython_config_file",
+  "postCreateCommand": "pip install -r requirements.txt && py pyflyby.install_in_ipython_config_file && git config --global user.name 'AhmedHossamMido' && git config --global user.email 'a@b.com'",
   "customizations": {
     "vscode": {
       "extensions": [
