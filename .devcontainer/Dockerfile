@@ -1,4 +1,4 @@
-FROM jupyter/minimal-notebook:lab-4.3.6
+FROM jupyter/datascience-notebook # https://hub.docker.com/r/jupyter/datascience-notebook
 
 USER root
 RUN apt-get update && apt-get install -y --no-install-recommends \
