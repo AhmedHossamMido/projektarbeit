@@ -3,7 +3,7 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "postCreateCommand": "pip install -r requirements.txt && git config --global user.name 'AhmedHossamMido' && git config --global user.email 'a@b.com'",
+  "postCreateCommand": "pip install --no-cache-dir -r requirements.txt && git config --global user.name 'AhmedHossamMido' && git config --global user.email 'a@b.com'",
   "customizations": {
     "vscode": {
       "extensions": [
