@@ -1,15 +1,17 @@
-FROM quay.io/jupyter/base-notebook:lab-4.3.6
+FROM jupyter/minimal-notebook:lab-4.3.6
 
 USER root
+
+# Installiere nur unbedingt nötige Pakete, ohne unnötige Recommends
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
-    debuginfod \
-    build-essential \
- && rm -rf /var/lib/apt/lists/*
+ && apt-get clean \
+ && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ENV DEBUGINFOD_URLS="https://debuginfod.ubuntu.com/"
+USER ${NB_USER}
 
-USER jovyan
-SHELL ["conda", "run", "--no-capture-output", "-n", "base", "/bin/bash", "-c"]
+# Verwende die Shell wie von Codespaces/Jupyter erwartet
+SHELL ["bash", "-c"]
 
-RUN pip install uv==0.6.6
+# Installiere Python-Pakete (hier: 'uv') schlank
+RUN pip install --no-cache-dir uv==0.6.6
